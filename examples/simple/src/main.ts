@@ -1,8 +1,9 @@
-import { User, TestValue } from '@utils';
 import initExample from '../../init';
 
-User();
-console.info(TestValue);
+const { a, b } = await import('@folder');
+
+console.info(a);
+console.info(b);
 
 if (import.meta.hot) {
   initExample(import.meta, 'Simple');
